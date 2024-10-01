@@ -7,11 +7,11 @@
     <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body class="w-screen h-screen sm:overflow-y-hidden bg-bg-main flex justify-center items-center font-poppins">
-
-    <main class="main-1 min-w-[400px] min-h-[400px] hidden items-center flex-col gap-16 ">
+    <main class="main-1 min-w-[400px] min-h-[400px] flex items-center flex-col gap-16 ">
         <div class="flex justify-center items-center mt-10">
             <img class="w-28 drop-shadow-3xl-cross" src="./images/cross.png">
             <img class="w-28 drop-shadow-3xl-circle" src="./images/circle.png">
@@ -20,78 +20,16 @@
         <p class="text-text-color text-lg">Choose your play mode</p>
 
         <div class="btn flex flex-col gap-8">
-            <button type="button"
-                class="text-white shadow-3xl-cross bg-cross-blue px-10 py-3 rounded-3xl text-sm hover:size-2">With
-                AI</button>
-            <button type="button" class="bg-bg-white px-10 py-3 shadow-3xl rounded-3xl text-text-color text-sm">With a friend</button>
+            <a href="./2nd_Page_with_AI.html">
+                <button type="button" id="aiBtn"
+                    class="text-white shadow-3xl-cross bg-cross-blue px-14 py-3 rounded-3xl text-sm ">With AI</button>
+            </a>
+            <a href="./2nd_Page_with_Friend.html">
+                <button type="button" id="friendBtn"
+                    class="bg-bg-white px-9 py-3 shadow-3xl rounded-3xl text-text-color text-sm">With a friend</button>
+            </a>
         </div>
     </main>
-
-    <main class="main-2 min-w-[400px] min-h-[400px] hidden flex-col items-center gap-16">
-        <p class="text-text-color text-lg">Pick your side</p>
-
-        <div class="flex gap-16">
-            <img class="w-28 drop-shadow-3xl-cross" src="./images/cross.png">
-            <img class="w-28 drop-shadow-3xl-circle" src="./images/circle.png">
-        </div>
-
-        <div class="flex gap-36">
-            <img class="w-8 drop-shadow-3xl-cross" src="./images/round.png">
-            <img class="w-8 drop-shadow-3xl-cross" src="./images/round.png">
-        </div>
-
-        <button type="button" class="bg-bg-white px-10 py-3 shadow-3xl rounded-3xl text-text-color text-sm">Continue</button>
-    </main>
-
-    <main class="main-3 min-w-[400px] min-h-[400px] hidden flex-col items-center gap-16">
-        <p class="text-text-color text-lg">Pick your side</p>
-
-        <div class="flex gap-16">
-            <img class="w-28 drop-shadow-3xl-cross" src="./images/cross.png">
-            <img class="w-28 drop-shadow-3xl-circle" src="./images/circle.png">
-        </div>
-
-        <div class="flex gap-16">
-            <input class="w-28 py-2 rounded-2xl px-6 text-text-color outline-none shadow-3xl" type="text" placeholder="Player 1">
-            <input class="w-28 py-2 rounded-2xl px-6 text-text-color outline-none shadow-3xl" type="text" placeholder="Player 2">
-        </div>
-
-        <div class="flex gap-36">
-            <img class="w-8 drop-shadow-3xl-cross" src="./images/round.png">
-            <img class="w-8 drop-shadow-3xl-cross" src="./images/round.png">
-        </div>
-
-        <button type="button" class="bg-bg-white px-10 py-3 shadow-3xl rounded-3xl text-text-color text-sm">Continue</button>
-    </main>
-
-    <main class="main-4 min-w-[400px] min-h-[400px] flex flex-col items-center gap-10">
-        
-        <div class="flex gap-12 justify-center items-center">
-            <span class="text-lg">Ai</span>
-            <span class="scores text-lg shadow-2xl px-8 py-2 text-center rounded-2xl bg-bg-white"><span class="player-1">1</span> - <span class="player-2">1</span></span>
-            <span class="text-lg">Ai</span>
-        </div>
-
-        <div class="board bg-bg-white shadow-2xl min-w-80 min-h-80 rounded-2xl flex justify-center items-center flex-col gap-8">
-            <div class="flex justify-center items-center gap-8">
-                <span><img class="w-14" src="./images/cross.png"></span>
-                <span><img class="w-14" src="./images/cross.png"></span>
-                <span><img class="w-14" src="./images/cross.png"></span>
-            </div>
-            <div class="flex justify-center items-center gap-8">
-                <span><img class="w-14" src="./images/cross.png"></span>
-                <span><img class="w-14" src="./images/cross.png"></span>
-                <span><img class="w-14" src="./images/cross.png"></span>
-            </div>
-            <div class="flex justify-center items-center gap-8">
-                <span><img class="w-14" src="./images/cross.png"></span>
-                <span><img class="w-14" src="./images/cross.png"></span>
-                <span><img class="w-14" src="./images/cross.png"></span>
-            </div>
-        </div>
-
-    </main>
-
 </body>
 
 </html>
