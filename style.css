@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.board{
+    background-image: url(./images/board-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

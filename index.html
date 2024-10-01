@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="w-screen h-screen bg-bg-main flex justify-center items-center font-poppins">
+<body class="w-screen h-screen sm:overflow-y-hidden bg-bg-main flex justify-center items-center font-poppins">
 
     <main class="main-1 min-w-[400px] min-h-[400px] hidden items-center flex-col gap-16 ">
         <div class="flex justify-center items-center mt-10">
@@ -43,7 +43,7 @@
         <button type="button" class="bg-bg-white px-10 py-3 shadow-3xl rounded-3xl text-text-color text-sm">Continue</button>
     </main>
 
-    <main class="main-3 min-w-[400px] min-h-[400px] flex flex-col items-center gap-16">
+    <main class="main-3 min-w-[400px] min-h-[400px] hidden flex-col items-center gap-16">
         <p class="text-text-color text-lg">Pick your side</p>
 
         <div class="flex gap-16">
@@ -64,7 +64,31 @@
         <button type="button" class="bg-bg-white px-10 py-3 shadow-3xl rounded-3xl text-text-color text-sm">Continue</button>
     </main>
 
-    <main class="main-4">
+    <main class="main-4 min-w-[400px] min-h-[400px] flex flex-col items-center gap-10">
+        
+        <div class="flex gap-12 justify-center items-center">
+            <span class="text-lg">Ai</span>
+            <span class="scores text-lg shadow-2xl px-8 py-2 text-center rounded-2xl bg-bg-white"><span class="player-1">1</span> - <span class="player-2">1</span></span>
+            <span class="text-lg">Ai</span>
+        </div>
+
+        <div class="board bg-bg-white shadow-2xl min-w-80 min-h-80 rounded-2xl flex justify-center items-center flex-col gap-8">
+            <div class="flex justify-center items-center gap-8">
+                <span><img class="w-14" src="./images/cross.png"></span>
+                <span><img class="w-14" src="./images/cross.png"></span>
+                <span><img class="w-14" src="./images/cross.png"></span>
+            </div>
+            <div class="flex justify-center items-center gap-8">
+                <span><img class="w-14" src="./images/cross.png"></span>
+                <span><img class="w-14" src="./images/cross.png"></span>
+                <span><img class="w-14" src="./images/cross.png"></span>
+            </div>
+            <div class="flex justify-center items-center gap-8">
+                <span><img class="w-14" src="./images/cross.png"></span>
+                <span><img class="w-14" src="./images/cross.png"></span>
+                <span><img class="w-14" src="./images/cross.png"></span>
+            </div>
+        </div>
 
     </main>
 
